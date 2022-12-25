@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER SECTION */
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center !important;
+}
+.nav-logo .img{
+    width: 28vh;
+    margin: auto;
+}
+
+/* MAIN SECTION */
+.play-box{
+    height: 86.7vh;
+    max-height: 86.7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/01_tic_tac_toe/images/play-backgroun.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.XO-score{
+    height: 8vh;
+    width: 15vw;
+    background-color: #B1BDC5;
+    align-self: flex-start;
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.x-score{
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.o-score{
+    height: 100%;
+    width: 50%;
+    border: 2px solid black;
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.play2{
+    height: 70vh;
+    max-height: 70vh;
+    width: 70vh;
+    max-width: 70vh;
+}
+.indi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B1BDC5;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border: 4px solid black;
+}
+.cells{
+    display: grid;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+.XO-logo{
+    font-size: 16vh;
+    font-family: 'Nerko One', cursive;
+    font-weight: 900;
+    text-decoration: none
+}
+#btn{
+    height: 6vh;
+    width: 8vw;
+    border: 2px solid whitesmoke;
+    align-self: flex-end;
+    margin: 0px 0px 10px 0px;
+}
+#btn2{
+    height: 6vh;
+    width: 8vw;
+    border: 2px solid whitesmoke;
+    align-self: flex-end;
+    margin: 0px 0px 10px 0px;
+}
+.buttons{
+    align-self: stretch;
+}
+.winning{
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+    font-family: 'Kenia', cursive;
+    font-size: 8vw;
+    font-weight: bolder;
+    right: 100vw;
+    color: white;
+    -webkit-text-stroke: black 4px;
+}
+@keyframes animation1 {
+    0%{
+        right: 100vw;
+    }
+    50%{
+        right: 0vw;
+    }
+    100%{
+        right: -100vw;
+    }
+}
